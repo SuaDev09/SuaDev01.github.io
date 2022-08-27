@@ -37,6 +37,7 @@ section{
     align-items: center; 
     justify-content: center;
     border-top: white 1px solid;
+    transition: all 0.5s;
 }
 
 #seccion-contact .seccion-contact-text{
