@@ -19,6 +19,11 @@ html{
     justify-content: space-around;
 }
 
+header{
+    width: 100%;
+    height: 15%;
+}
+
 section{
     width: 100%;
     height: 70%;
@@ -71,6 +76,7 @@ section{
         display: flex;
         flex-direction: column;
         padding: 18px 0;
+        transition: all 0.5s;
     }
 
     #seccion-contact .seccion-contact-text{
