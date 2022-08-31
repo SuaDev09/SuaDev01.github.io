@@ -8,30 +8,106 @@
 html, body{
     background-color: #1b2a4e;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+
 header{
     width: 100%;
-    height: 15%;
+    height: 5vh;
 }
 
-section{
+.content-gorillaz{
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.img{
     width: 100%;
-    height: 70%;
+    border-radius: 15px;
+}
+
+.integrantes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrantes-lista{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    background-color: #fff;
+    border: aliceblue solid 2px;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 25px 10px;
+}
+
+.integrantes-lista li{
+    width: 40%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+table{
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 100%;
+    color: black;
+    display: table;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+thead{
+    background-color: #3a4a70;
+    color: white;   
+    border-top-right-radius: 20px; 
+}
+
+
+
+th, td, tfoot td{
+    padding: 10px;
+}
+
+.anio{
+    background-color: #a4b0cb83;
+    text-align: center;
+}
+
+tfoot td{
+    background-color: #5377cc9c;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    text-align: center;
+    overflow: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 #seccion-contact{
     width: 100%;
-    height: 15%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center; 
