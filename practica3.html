@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrupacion de varios controles</title>
+</head>
+
+<body>
+  <form method="post" id="formulario" name="formulario" class="formulario">
+    <fieldset>
+        <legend>Agrupacion de varios controles: </legend>
+        <div class="usuario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre">
+        </div>
+
+        <div class="departamento">
+            <label for="nombre">Departamento</label>
+            <select name="departamento" id="select" onchange="seleccion()">
+                <option value="0">Seleccionar</option>
+                <option value="1">Marketing</option>
+                <option value="2">Desarrollo de Software</option>
+                <option value="3">Diseño</option>
+            </select>
+        </div>
+
+        <div class="descripcion">
+            <label for="Descripcion">*Descripcion:</label>
+            <textarea name="descripcion" id="descripcion" rows="10" cols="60" onkeyup="mayusculas()"></textarea>
+        </div>
+
+        <div class="contrasena">
+            <label for="nombre">Contraseña</label>
+            <input type="password" name="contrasena"" id="contrasena" placeholder="Ingrese su contrasena">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Agrupacion de botones</legend>
+        <input class="form__enviar" name="limpiar" type="reset" value="Resetear">
+        <input class="form__enviar" name="enviar" onclick="comprobarDatos()" type="submit" value="Enviar">
+    </fieldset>
+  </form>
+  <script>
+    function mayusculas(){
+        var texto = document.getElementById("descripcion").value;
+        var texto2 = texto.replace(' ', '%');
+        document.getElementById("descripcion").value = texto2.toUpperCase();
+    }
+
+    function seleccion() {
+        var select = document.getElementById("select").value;
+        if(select == 2){
+            alert("ESta opcion no es valida");
+            document.getElementById("select").value = 0;
+        }
+    }
+  </script>
+</body>
+</html>
