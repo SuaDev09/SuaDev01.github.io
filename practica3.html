@@ -14,11 +14,13 @@
         <legend>Agrupacion de varios controles: </legend>
         <div class="usuario">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre">
+            <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre" onkeyup="mayusculas()">
         </div>
 
         <div class="departamento">
             <label for="nombre">Departamento</label>
+            <br>
             <select name="departamento" id="select" onchange="seleccion()">
                 <option value="0">Seleccionar</option>
                 <option value="1">Marketing</option>
@@ -29,11 +31,13 @@
 
         <div class="descripcion">
             <label for="Descripcion">*Descripcion:</label>
-            <textarea name="descripcion" id="descripcion" rows="10" cols="60" onkeyup="mayusculas()"></textarea>
+            <br>
+            <textarea name="descripcion" id="descripcion" rows="10" cols="60" onkeyup="porcentaje()"></textarea>
         </div>
 
         <div class="contrasena">
             <label for="nombre">Contraseña</label>
+            <br>
             <input type="password" name="contrasena"" id="contrasena" placeholder="Ingrese su contrasena">
         </div>
     </fieldset>
@@ -46,9 +50,14 @@
   </form>
   <script>
     function mayusculas(){
+        var texto = document.getElementById("nombre").value;
+        document.getElementById("nombre").value = texto.toUpperCase();
+    }
+
+    function porcentaje(){
         var texto = document.getElementById("descripcion").value;
         var texto2 = texto.replace(' ', '%');
-        document.getElementById("descripcion").value = texto2.toUpperCase();
+        document.getElementById("descripcion").value = texto2;
     }
 
     function seleccion() {
