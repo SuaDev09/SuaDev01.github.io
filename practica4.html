@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/practica4.css">
     <link rel="icon" href="../SuaDev01.github.io/img/github.png" type="image/png">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" /> 
@@ -54,70 +54,41 @@
           </nav>
     </header>
 
-    <section class="w-full h-auto mb-3 mt-2">
-        <div class="main w-full flex flex-col mx-auto ">
-            <div class="main-elements flex flex-wrap flex-row justify-around my-2 items-center">
-              <div class="p-1 flex flex-col">
-                <div class="main-title mb-3">
-                  <h1 class="text-4xl text-black text-left">Desarrollamos Software a tu medida</h1>
-                  <h3 class="text-xl text-black text-left">Desarrollamos Software a tu medida</h3>
-                </div>
-                <img src="./img/practica4/main-img.jpg" alt="" class=" w-full rounded-lg">
-              </div>
-
-              <div class="p-6 w-full h-3/6 max-w-md rounded-lg border border-gray-200 shadow-2xl rounded-lg sm:p-6 md:p-6 dark:bg-gray-800 dark:border-gray-700">
-                  <form class="space-y-5 md:space-y-12" action="#">
-                      <h5 class="text-3xl font-medium text-gray-900 dark:text-white">Recibir ofertas especiales</h5>
-                      <div>
-                          <label for="nombre" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Nombre</label>
-                          <input type="nombre" name="nombre" id="nombre" class="bg-white-50 border border-white-300 text-black-900 text-sm rounded-lg focus:ring-white-500 focus:border-white-500 block w-full p-4 dark:bg-white-600 dark:border-white-500 dark:placeholder-white-400 dark:text-black" placeholder="Tu nombre" required>
-                      </div>
-                      <div>
-                          <label for="telefono" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Numero de Telefono</label>
-                          <input type="telefono" name="telefono" id="telefono" class="bg-white-50 border border-white-300 text-black-900 text-sm rounded-lg focus:ring-white-500 focus:border-white-500 block w-full p-4 dark:bg-white-600 dark:border-white-500 dark:placeholder-white-400 dark:text-black" placeholder="0000-000-000" required>
-                      </div>
-                      <div>
-                        <label for="correo" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Correo</label>
-                        <input type="correo" name="correo" id="correo" class="bg-white-50 border border-white-300 text-black-900 text-sm rounded-lg focus:ring-white-500 focus:border-white-500 block w-full p-4 dark:bg-white-600 dark:border-white-500 dark:placeholder-white-400 dark:text-black" placeholder="example@example.com" required>
-                      </div>
-                      <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
-                  </form>
-              </div>
+    <section class="w-full">
+        <article class="main">
+          <div class="main-textimg">
+            <div class="textimg-text">
+              <h1>SuaDev</h1>
+              <h3>Desarrollamos software a tu medida.</h3>
             </div>
 
-            <div class="w-full flex flex-wrap flex-row justify-around">
-              <div class="max-w-md py-4 px-8 bg-white shadow-2xl rounded-lg my-20">
-                <div class="flex justify-center md:justify-center -mt-16">
-                  <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-                </div>
-                <div>
-                  <h2 class="text-gray-800 text-3xl font-semibold text-center">Design Tools</h2>
-                  <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
-                </div>
-              </div>
-  
-              <div class="max-w-md py-4 px-8 bg-white shadow-2xl rounded-lg my-20">
-                <div class="flex justify-center -mt-16">
-                  <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-                </div>
-                <div>
-                  <h2 class="text-gray-800 text-3xl font-semibold text-center">Design Tools</h2>
-                  <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
-                </div>
-              </div>
-              
-              <div class="max-w-md py-4 px-8 bg-white shadow-2xl rounded-lg my-20">
-                <div class="flex justify-center -mt-16">
-                  <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500" src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-                </div>
-                <div>
-                  <h2 class="text-gray-800 text-3xl font-semibold text-center">Design Tools</h2>
-                  <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
-                </div>
-              </div>
+            <div class="textimg-img">
+              <img src="./img/practica4/development.png" alt="">
             </div>
+          </div>
+          
+          <div class="main-form">
+            <form action="" class="landing-form">
+              <h1 class="form-title"></h1>
             
-        </div>
+              <div class="form-element">
+                <label for=""></label>
+                <input type="text">
+              </div>
+            
+              <div class="form-element">
+                <label for=""></label>
+                <input type="text">
+              </div>
+
+              <div class="form-element">
+                <label for=""></label>
+                <input type="text">
+              </div>
+            
+            </form>
+          </div>
+        </article>
     </section>
 
     <footer id="seccion-contact">
