@@ -12,24 +12,97 @@ html, body{
     background-size: cover;
     width: 100%;
     height: 100vh;
-    color: #1b2a4e;
     font-family: 'Poppins', sans-serif;
 }
 
 html{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    color: #1b2a4e;
 }
 
 header{
     width: 100%;
-    height: 15%;
+    height: auto;
 }
 
 section{
     width: 100%;
-    height: 70%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.main{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.main .main-textimg{
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.main .main-textimg .textimg-text{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.main .main-textimg .textimg-text h3{
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+
+.main .main-textimg .textimg-img{
+    width: 100%;
+}
+
+.main .main-textimg .textimg-img img{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.main .main-form{
+    width: 30%;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.main .main-form .landing-form h1{
+    font-size: large;
+}
+
+.main .main-form .landing-form .form-element{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main .main-form .landing-form .form-element label{
+    font-size: small;
+}
+
+.main .main-form .landing-form .form-element input{
+    border-radius: 10px;
+    font-size: small;
+}
+
+.main .main-form .landing-form .main-form-button{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #1b2a4e;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
 }
 
 #seccion-contact{
@@ -43,6 +116,7 @@ section{
     justify-content: center;
     border-top: white 1px solid;
     transition: all 0.5s;
+    padding: 10px;
 }
 
 #seccion-contact .seccion-contact-text{
