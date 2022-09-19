@@ -1,73 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
-    background-image: url("../img/practica4/bg-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
+
+html,
+body {
+    background: url("../img/practica4/bg-img.png") no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     color: #1b2a4e;
 }
 
-header{
+header {
     width: 100%;
     height: auto;
 }
 
-section{
+section {
     width: 100%;
     height: auto;
     margin: 20px 0;
 }
 
-.main{
+.main {
     width: 90%;
     height: auto;
     margin: 0 auto;
     padding: 20px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
 }
 
-.main .main-textimg{
+.main .main-textimg {
     width: 70%;
     padding: 10px;
     margin: 0 auto;
 }
 
-.main .main-textimg .textimg-text{
+.main .main-textimg .textimg-text {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.main .main-textimg .textimg-text h3{
+.main .main-textimg .textimg-text h3 {
     font-size: xx-large;
     text-align: center;
     color: white;
 }
 
-.main .main-textimg .textimg-img{
+.main .main-textimg .textimg-img {
     width: 100%;
 }
 
-.main .main-textimg .textimg-img img{
+.main .main-textimg .textimg-img img {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     border-radius: 30px;
 }
 
-.main .main-form{
+.main .main-form {
     width: 30%;
     padding: 25px;
     border-radius: 10px;
@@ -75,25 +80,25 @@ section{
     margin: 0 auto;
 }
 
-.main .main-form .landing-form h1{
+.main .main-form .landing-form h1 {
     font-size: large;
 }
 
-.main .main-form .landing-form .form-element{
+.main .main-form .landing-form .form-element {
     width: 100%;
     margin: 20px 0;
 }
 
-.main .main-form .landing-form .form-element label{
+.main .main-form .landing-form .form-element label {
     font-size: small;
 }
 
-.main .main-form .landing-form .form-element input{
+.main .main-form .landing-form .form-element input {
     border-radius: 10px;
     font-size: small;
 }
 
-.main .main-form .landing-form .main-form-button{
+.main .main-form .landing-form .main-form-button {
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -105,30 +110,30 @@ section{
     font-size: small;
 }
 
-#seccion-contact{
+#seccion-contact {
     background-color: #1b2a4e;
     color: white;
     width: 100%;
     height: 15%;
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     border-top: white 1px solid;
     transition: all 0.5s;
     padding: 10px;
 }
 
-#seccion-contact .seccion-contact-text{
+#seccion-contact .seccion-contact-text {
     height: 100%;
     font-size: 18px;
     box-sizing: content-box;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
-#seccion-contact .seccion-contact-imgs{
+#seccion-contact .seccion-contact-imgs {
     height: 100%;
     margin-left: 30px;
     box-sizing: content-box;
@@ -136,28 +141,44 @@ section{
     align-items: center;
 }
 
-#seccion-contact .seccion-contact-imgs a{
+#seccion-contact .seccion-contact-imgs a {
     width: 22px;
     height: 22px;
     margin-right: 15px;
 }
 
-#seccion-contact .seccion-contact-imgs a img{
+#seccion-contact .seccion-contact-imgs a img {
     width: 22px;
     height: 22px;
 }
 
 
-@media only screen and (max-width: 700px) {
-    #seccion-contact{
+@media only screen and (max-width: 900px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .main-form {
+        width: 80%;
+        padding: 25px;
+        border-radius: 10px;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    article .cards {
+        margin: 30px 0;
+    }
+
+    #seccion-contact {
         display: flex;
         flex-direction: column;
         padding: 18px 0;
         transition: all 0.5s;
     }
 
-    #seccion-contact .seccion-contact-text{
+    #seccion-contact .seccion-contact-text {
         font-size: 14px;
     }
 }
-
